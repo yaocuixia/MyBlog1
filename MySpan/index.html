@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>发表说说</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.randrange.js"></script>
+    <script type="text/javascript" src="js/jquery.repeatstring.js"></script>
+    <script type="text/javascript" src="js/jquery.randomfilter.js"></script>
+    <script type="text/javascript" src="js/jquery.near.js"></script>
+    <script type="text/javascript" src="js/jquery.minesweeper.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <ul class="ul1">
+        <li><img src="img/1.svg"><span style="font-size:16px;font-weight:bold;">QQ空间</span></li>
+        <li><img src="img/个人中心%20.svg"><span>个人中心</span></li>
+        <li id="myMain"><img src="img/我的主页.svg"><span>我的主页</span>
+            <div class="Con" id="nav">
+                <div class="con_left"><img style="width:50px;height:50px;" src="img/个人.svg"></div>
+                <div class="con_right">
+                    <ul>
+                        <li><img src="img/日志.png"><span>日志</span></li>
+                        <li><img src="img/图片.png"><span>相册</span></li>
+                        <li><img src="img/说说.png"><span>说说</span></li>
+                        <li><img src="img/分享.png"><span>分享</span></li>
+                        <li><img src="img/视频.png"><span>视频</span></li>
+                        <li><img src="img/音乐.png"><span>音乐</span></li>
+                        <li><img src="img/编辑.png"><span>留言板</span></li>
+                        <li><img src="img/个人档.png"><span>个人档</span></li>
+                        <li><img src="img/收藏.png"><span>收藏</span></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li id="friend"><img src="img/好友.svg"><span>好友</span>
+            <div class="Con1">
+                <div class="friend_left">
+                    <img src="img/寻找好友.png" /><br /><span>&nbsp 寻找好友</span><br />
+                    <img src="img/亲密度.png" /><br /><span>&nbsp 亲密度</span>
+                </div>
+                <div class="friend_right">
+                    <p><span>最近联系好友</span><input type="text" placeholder="搜索好友" /><img src="img/搜索.png" /></p>
+                     <div class="link"><img src="img/最近联系好友.png" /></div>
+                </div>
+            </div>
+        </li>
+        <li id="game"><img src="img/游戏.svg"><span>游戏</span>
+            <div class="Con2">
+                <div class="Con2_left">
+                    <ul>
+                        <li><img src="img/积分商城.png" style="width:50px;height:50px;"><br /><span>积分商城</span></li>
+                        <li><img src="img/送礼品.png"><br /><span>每日礼品</span></li>
+                        <li><img src="img/找游戏.png"><br /><span>找游戏</span></li>
+                    </ul>
+                </div>
+                <div class="Con2_right">
+                    <img src="img/游戏.png" style="width:400px;height:300px;margin:15px auto;">
+                </div>
+            </div>
+        </li>
+        <li id="person"><img src="img/个性装扮.svg"><span>装扮</span>
+            <div class="Con3" id="bg">
+                <ul>
+                    <li><img src="img/s_bg1.jpg" /></li>
+                    <li><img src="img/s_bg2.jpg" /></li>
+                    <li><img src="img/s_bg3.jpg" /></li>
+                    <li><img src="img/s_bg4.jpg" /></li>
+                    <li><img src="img/s_bg5.jpg" /></li>
+                    <li><img src="img/s_bg6.jpg" /></li>
+                </ul>
+            </div>
+        </li>
+        <li id="music"><img src="img/背景音乐 .svg"><span>背景音乐</span></li>
+        <li style="float:right;margin-right:-120px;border-radius:60%;background:rgba(161, 152, 75, 0.82);" id="Exit"><span style="color:red;font-weight:bold;font-size:12px;">退出登录</span></li>
+    </ul>
+</div>
+<!--导航部分-->
+<div class="nav">
+    <span style="font-size:30px;font-weight:bold;height:35px;color:#FF9E3C;margin-top:20px;">LUCKY GIRL的空间</span>
+    <span>努力不一定成功，放弃却一定失败</span>
+    <div class="name">
+        <div class="name1">
+                <img style="width:150px;height:150px;" src="img/s_bg5.jpg" />
+        </div>
+        <div class="name2">
+            <div class="main"><span>一个人，一座城<img src="img/钻石.svg" /></span>
+
+			</div>
+            <div class="main1">
+                <ul>
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">日志</a></li>
+                    <li class="photo"><a href="#">相册</a>
+                        <div class="photo_main">
+                            <div id="Message">
+                                <!--留言开始-->
+                                <div class="MesCon">
+                                    <div class="imgBut">上传照片</div>
+                                    <div class="Edit" contenteditable="true"></div>
+                                </div>
+                                <!--留言结束-->
+                                <!--按钮开始-->
+                                <div class="MesBut">
+                                    <font>本地上传</font><font class="tz">拖拽上传</font> <span>发表</span>
+                                </div>
+                                <!--按钮结束-->
+                                <div class="tzImg">
+                                    <p class="tis">请将图片拖拽到此区域</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="lyb.html">留言板</a></li>
+                    <li><a href="#">说说</a></li>
+                    <li><a href="#">个人档</a></li>
+                    <li><a href="#">音乐</a></li>
+                    <li id="personal"><a href="#">时光轴</a></li>
+                    <li id="playGame"><a href="#">游戏</a>
+                        <div class="playGame1">
+                            <center>
+                                <h1>扫雷小游戏<img id="closeGame" src="img/close.png" /></h1>
+                                <table cellspacing="2" class="mine-sweeper"><tbody>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="">1</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr></tbody></table>
+                            </center>
+
+                        </div>
+
+                    </li>
+                    <li><a href="#">更多</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="music">
+    <!--左边图片-->
+    <div class="musicImg">
+        <img src="img/music3.jpg" style="width:150px;height:150px;border-radius:50%;" class="xpic">
+    </div>
+    <!--右边播放-->
+    <div class="musicCon">
+        <h3 id="playBut">泡沫---邓紫棋</h3>
+        <dl>
+            <dt><img class="imgBut1" style="border-radius:50%;" src="img/play.png" ></dt>
+            <dd>
+                <p class="music_jb"></p>
+                <p class="music_jb1"></p>
+            </dd>
+        </dl>
+    </div>
+</div>
+<!--主内容左半部分-->
+<div class="left">
+    <ul>
+        <li style="background:#FFE09A;border-radius:5px;"><a href="#"><img src="img/11.svg" />好友动态</a></li>
+        <li><a href="#"><img src="img/12.svg">特别关心</a></li>
+        <li><a href="#"><img src="img/13.svg">与我相关</a></li>
+        <li><a href="#"><img src="img/14.svg">直播广场</a></li>
+        <li><a href="#"><img src="img/15.svg">那年今日</a></li>
+        <li><a href="#"><img src="img/16.svg">游戏应用</a></li>
+        <li><a href="#"><img src="img/17.svg">我的收藏</a></li>
+        <li><a href="#"><img src="img/18.svg">微云备份</a></li>
+        <li><a href="#"><img src="img/19.svg">企鹅FM</a></li>
+        <li><a href="#"><img src="img/20.svg">QQ阅读</a></li>
+        <li><a href="#"><img src="img/21.svg">实名朋友</a></li>
+        <li><a href="#"><img src="img/22.svg">认证空间</a></li>
+        <li><a href="#"><img src="img/23.svg">QQ演出</a></li>
+        <li><a href="#"><img src="img/24.svg">吃喝玩乐</a></li>
+    </ul>
+</div>
+<!--主内容右半部分-->
+<div class="right">
+     <div class="right_top">
+        <img src="img/周.png" />
+     </div>
+    <div class="right_main" id="fade">
+        <ul>
+            <li  class="active"><img src="img/big2.jpg"></li>
+            <li><img src="img/big3.jpg"></li>
+            <li><img src="img/big4.jpg"></li>
+        </ul>
+    </div>
+    <div class="right_bottom">
+        <h3>大家都在看</h3>
+        <ul>
+            <li>
+                <div class="img"><a href="http://www.miaov.com/2013"><img src="img/周董.png" alt="内容图片" /></a></div>
+                <div class="text">
+                    <p>周董战队学员唱功太强？费玉清全程陶醉脸....</p>
+                </div>
+            </li>
+            <li>
+                <div class="img"><a href="http://www.miaov.com/2013"><img src="img/小技巧.png" alt="内容图片" /></a></div>
+                <div class="text">
+                    <p>一些非常实用的生活小技巧，太有创意了！....</p>
+                </div>
+            </li>
+            <li>
+                <div class="img"><a href="http://www.miaov.com/2013"><img src="img/钻戒.png" alt="内容图片" /></a></div>
+                <div class="text">
+                    <p>男士一生仅能定制一枚的钻戒，你敢送吗....</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--发表说说-->
+<div id="qq">
+    <p>有什么新鲜事告诉大家??</p>
+    <div class="message" contentEditable="true"></div>
+    <div class="button">
+        <img src="img/bba_thumb.gif" id="bq">
+        <span class="submit" id="submit">发表</span>
+        <div class="face">
+            <ul>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
+                <li><img src="img/rabbit_thumb.gif"></li>
+                <li><img src="img/sweata_thumb.gif"></li>
+                <li><img src="img/money_thumb.gif"></li>
+                <li><img src="img/lxhluguo_thumb.gif"></li>
+                <li><img src="img/cf_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
+                <li><img src="img/rabbit_thumb.gif"></li>
+                <li><img src="img/sweata_thumb.gif"></li>
+                <li><img src="img/money_thumb.gif"></li>
+                <li><img src="img/lxhluguo_thumb.gif"></li>
+                <li><img src="img/cf_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/cf_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--发表说说结束-->
+<!--发表说说成功显示-->
+<div class="mesCon">
+
+</div>
+<!--html5音乐播放器-->
+<audio src="music/泡沫.mp3"  id="music_audio" ></audio>
+<audio src="music/最熟悉的陌生人.mp3" controls id="music_1"></audio>
+<div class="shadow">
+
+</div>
+
+<div class="bigImg"><img src="img/1.jpg" /></div>
+<div class="imgList">
+    <h3>图片相册<img src="img/close.png" class="close" /></h3>
+    <ul>
+        <li><img src="img/s_1.jpg" /></li>
+        <li><img src="img/s_2.jpg" /></li>
+        <li><img src="img/s_3.jpg" /></li>
+        <li><img src="img/s_4.jpg" /></li>
+        <li><img src="img/s_5.jpg" /></li>
+        <li><img src="img/s_6.jpg" /></li>
+        <li><img src="img/s_7.jpg" /></li>
+        <li><img src="img/s_8.jpg" /></li>
+        <li><img src="img/s_9.jpg" /></li>
+    </ul>
+</div>
+<div class="button1">
+    <div class="Img_close">关闭</div>
+    <div class="buttonCon">
+        <img src="img/album.png" class="album" />
+        <img src="img/back_dull.png" class="back_dull" />
+        <img src="img/play_dull.png" class="play" />
+        <img src="img/forward_dull.png" class="forward" />
+    </div>
+</div>
+<div class="timer">
+    <span>距离我们毕业还剩：</span>
+    <div class="content">
+        <input type="text" id="time_d" placeholder="" />天
+        <input type="text" id="time_h" placeholder="" />时
+        <input type="text" id="time_m" placeholder="" />分
+        <input type="text" id="time_s" placeholder="" />秒
+    </div>
+</div>
+
+</body>
+</html>

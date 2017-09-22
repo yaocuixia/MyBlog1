@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>个人简历制作</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<script>
+	window.onload = function(){
+    tab("tab_t","li","tab_c","div","onmouseover")
+    function tab(tab_t,tab_t_tag,tab_c,tag_c_tag,evt){
+        var tab_t = document.getElementById(tab_t);
+        var tab_t_li = tab_t.getElementsByTagName(tab_t_tag);
+        var tab_c = document.getElementById(tab_c);
+        var tab_c_li = tab_c.getElementsByTagName(tag_c_tag);
+        var len = tab_t_li.length;
+        var i=0;
+        var timer = null;
+        var num=0;
+            for(i=0; i<len; i++){
+                tab_t_li[i].index = i;
+                tab_t_li[i][evt] = function(){
+                  clearInterval(timer);
+                    num = this.index;
+                    tab_change()
+                };
+                tab_t_li[i].onmouseout = function(){
+                    autoplay();
+                }
+            }
+        
+        function tab_change(){
+            for(i=0; i<len; i++){
+                tab_t_li[i].className = '';
+                tab_c_li[i].className = 'hide';
+            }
+            tab_t_li[num].className = 'act';
+            tab_c_li[num].className = '';
+        }
+        
+       /* function autoplay(){
+          timer = setInterval(function(){
+              num++;
+                if(num>=len) num=0;
+              tab_change();
+            },2000);
+        }
+        autoplay();*/
+    }
+	 var speed=10; //数字越大速度越慢
+    var tab=document.getElementById("demo");
+    var tab1=document.getElementById("demo1");
+    var tab2=document.getElementById("demo2");
+    tab2.innerHTML=tab1.innerHTML;
+    function Marquee(){
+    if(tab2.offsetWidth-tab.scrollLeft<=0)
+    tab.scrollLeft-=tab1.offsetWidth
+    else{
+    tab.scrollLeft++;
+    }
+    }
+    var MyMar=setInterval(Marquee,speed);
+    tab.onmouseover=function() {clearInterval(MyMar)};
+    tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+    
+}
+</script>
+</head>
+<body>
+	<header>
+		<img src="images/title.png" />
+	</header>
+	<section>
+		<!-- 关于我---自我介绍部分 -->
+		<div class="AboutMe">
+			<div class="Introduce">
+				<div class="left">
+				<h2><img src="images/6.png"></h2>
+				<div style="height:20px;"></div>
+				<p>
+				&nbsp &nbsp 我叫姚翠霞，就读于天水师范学院。是一个活泼开朗，大方的女孩。我的专业是电子信息工程。
+				在大二的时候我选择进入我们学校的创新创业实验室开始学习web前端方面的知识。在经过二年的努力,我熟练地掌握了html+css,html5+css3,javascript,jquery,ajax等语言的使用，
+				也掌握了部分框架的使用，例如bootstrap，
+				JqueryEasyUI等。我喜欢编写代码时的感觉，也因此两年的学习让我在学习的态度上多了些耐心。在调试bug的过程是漫长而辛苦的，
+				但是成功的那一刻的喜悦让我总觉得付出中终究不会白费。
+				</p>
+				<!-- <img style="float:right;" src="images/4.png" /> -->
+				</div>
+				<div class="right">
+					<img src="images/me.jpg">
+				</div>
+			</div>
+		</div>
+		<!-- 我所掌握的技能介绍 -->
+		<div class="MySkill">
+			<div class="skill">
+				<h3><img src="images/7.png"></h3>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">html+css:</h4>
+					<div class="progress">
+						<div class="progress-bar"></div>
+					</div> 
+				</div>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">h5+css3:</h4>
+					<div class="progress">
+						<div class="progress-bar1"></div>
+					</div> 
+				</div>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">Javascript:</h4>
+					<div class="progress">
+						<div class="progress-bar2"></div>
+					</div> 
+				</div>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">Jquery:</h4>
+					<div class="progress">
+						<div class="progress-bar3"></div>
+					</div> 
+				</div>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">JQEasyUI:</h4>
+					<div class="progress">
+						<div class="progress-bar4"></div>
+					</div> 
+				</div>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">BootStrap:</h4>
+					<div class="progress">
+						<div class="progress-bar5"></div>
+					</div> 
+				</div>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">Ajax+json:</h4>
+					<div class="progress">
+						<div class="progress-bar6"></div>
+					</div> 
+				</div>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">Java:</h4>
+					<div class="progress">
+						<div class="progress-bar7"></div>
+					</div> 
+				</div>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">ReactNative:</h4>
+					<div class="progress">
+						<div class="progress-bar8"></div>
+					</div> 
+				</div>
+				<div class="container">
+					<h4 style="float:left;font-size:20px;">PhotoShop:</h4>
+					<div class="progress">
+						<div class="progress-bar9"></div>
+					</div> 
+				</div>
+				
+			</div>
+		
+		</div>
+		<!-- 时间轴--简要写自己所获得的奖励证书 -->
+		<div class="TimeLine">
+			<div class="line">
+				<h1>TimeLine</h1>
+				<div class="line_left">
+					<div class="first_year">
+						&nbsp 2014年9月，走进我生活了四年的大学，一切开始的没有那么的顺利，刚开始的不习惯，不知所措，迷茫，让刚开始的大学生活并没有以前想象中的美好;
+					</div>
+					<div class="third_year">
+						&nbsp 2016年九月，比以前多了份成熟，也多了份责任。有人说越努力越幸运。所以我一直努力着，也幸运者，最终获取了全国励志奖学金，因此在前进的方向多了些鼓励;
+					</div>
+				</div>
+				<div class="line-right">
+					<div class="second_year">&nbsp 2015年九月，经历了一年的迷茫，开始了自己的规划。考取了英语四级证书和计算机二级证和计算机三级证书。选择进入了创新创业实验室，找到了自己喜欢的专业方向。</div>
+					<div class="forth_year">&nbsp 2017年九月，转眼间，大学生涯已经接近尾声，我也要开始奔波于自己的求职生涯，虽然知道前面的路一定很艰辛，但是我一直会努力，一直坚持。</div>
+				</div>
+			</div>
+		</div>
+		<div class="FirstBlack">
+			<div class="first">
+				<div id="demo">
+				<div id="indemo">
+				<div id="demo1">
+				<a href="#"><img src="images/8.jpg"></a>
+				<a href="#"><img src="images/1-4.jpg"></a>
+				<a href="#"><img src="images/1-3.jpg"></a>
+				<a href="#"><img src="images/32.jpg"></a>
+				<a href="#"><img src="images/7.jpg"></a>
+				</div>
+				<div id="demo2"></div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- 我的大学照片 -->
+		<div class="MyUniversity">
+			<div class="university">
+				<ul id="tab_t">
+					<li class="act">首页</li>
+					<li>关于大学</li>
+					<li>我的回忆</li>
+				</ul>
+				<div id="tab_c">
+					<div class="firstPage" id="firstPage">
+						<h2>天水师范学院简介：</h2>
+						<article>
+							&nbsp &nbsp天水师范学院（Tianshui Normal University）坐落在中国历史文化名城、中国优秀旅游城市以及甘肃省第二大城市"羲皇故里"天水市。这里气候宜人，历史悠久，是学生求知成才的理想之地。
+						</article>
+						<article>
+							&nbsp &nbsp学校始建于1959年。1988年，学校就以"为基础教育培养合格师资，方向明确，成绩显著"而受到国家教委的表彰奖励。2000年由天水师范高等专科学校升格为天水师范学院，开始本科招生。
+							2011年10月，被教育部列为培养教育硕士专业学位研究生试点工作建设单位。2013年，开始招生培养教育硕士。几十年来，学校坚持"困境中求生存，奋斗中求发展"的精神，已为社会培养了数以万计的以基础教育师资为主的高素质应用型人才，得到了社会的普遍认可。近年来，学校立足自身实际，紧跟高等教育结构调整趋势，初步形成了教师教育、工科、商务管理、文化传媒、医疗健康服务等五大类应用型专业群，确定了建设区域性、高水平应用科技大学的办学方向。
+						</article>
+						<article>
+							&nbsp &nbsp截至2015年5月，学校占地670亩，校舍建筑面积31万平方米;馆藏图书177.7万册，数据库12种;教学仪器设备值8778.5万元。下设17个二级学院;全日制在校本科生14278余人，研究生195人。
+						</article>	
+						<article>
+							&nbsp &nbsp截至2015年5月，学校设有11个校级科研机构，20个二级学院所属的研究所，2个甘肃省高校省级重点实验室，2个甘肃省高校人文社会科学重点研究基地，1个省级工程技术研究中心，2个省级实验教学示范中心。<br />
+
+							&nbsp &nbsp研究中心：甘肃省高校人文社会科学重点研究基地——天水师范学院陇右文化研究中心（省级重点）（历史文化学院）、陇东南民间文艺研究中心（省级重点）（文学与文化传播学院） ；<br />
+
+							&nbsp &nbsp研究院：天水师范学院伏羲文化研究院（校级）；
+						
+						</article>
+					</div>
+					<div class="hide" id="pic">
+						<img src="images/s1.jpg" />
+						<img src="images/s2.jpg" />
+						<img src="images/s6.jpg" />
+						<img src="images/s3.jpg" />
+						<img src="images/s5.jpg" />
+						<img src="images/s4.jpg" />
+						<img src="images/s8.jpg" />
+						<img src="images/s7.jpg" />	
+					</div>
+					<div class="hide">
+						<article>
+							&nbsp &nbsp2014年九月，怀着对大学的期待，我踏进了天水师范学院的校门，认识了一群陪着我一起走过来的好友。<br />
+							<img src="images/p1.jpg"><img src="images/p2.jpg"><img src="images/p3.jpg">
+							<img src="images/p4.jpg"><img src="images/p5.jpg">
+							<img src="images/p7.jpg"><br />
+							&nbsp &nbsp2018年六月，挥手告别后，也许有的人已经是最后一次相见，最后一次拥抱，但是接下来的路还是要继续，千言万语最后只能是一句珍重，有缘再见。不哭泣，因为离别还会再见。
+							我也曾悔恨，我也曾鄙视曾经不努力的自己，但是我不曾后悔遇到那么一群带给我许多许多的好友。有他们，我的生活才多了更多的快乐。忘不了心情不好闷闷不乐静静待在床上不吃饭舍友一句一句的
+							劝说，当时真的很嫌烦，我真的想静静，过后去想想当时的我是那么的幸福。忘不了一起去游玩的任何地点。忘不了因某件事大哭一直在身边安慰的他们。忘不了的太多，但是我害怕分开后时间久了，彼此的生活发生了变化，彼此也就在
+							彼此的生命中淡淡的消失，但是我很幸运我遇到过。谢谢有你们。
+		
+						</article>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="SecondBlack">
+			<div class="second">
+				<img src="images/hu.jpg">
+				<br />
+				&nbsp &nbsp史蒂芬·威廉·霍金（Stephen William Hawking，1942年1月8日），ALS患者，英国著名物理学家和宇宙学家。肌肉萎缩性侧索硬化症患者，全身瘫痪，不能发音。霍金的主要研究领域是宇宙论和黑洞，证明了广义相对论的奇性定理和黑洞面积定理，
+				提出了黑洞蒸发现象和无边界的霍金宇宙模型，在统一20世纪物理学的两大基础理论——爱因斯坦创立的相对论和普朗克创立的量子力学方面走出了重要一步。
+				<span style="font-size:16px;margin-left:160px;color:blue;font-size:20px;font-weight:bold">while theres life,there is hope.</span>
+			</div> 
+		</div>
+		<!-- 最新消息 -->
+		<div class="LatestNew">
+			<div class="new">
+				<h1>LatestNew</h1>
+				<div class="new1" style="background:url(images/bg1.jpg)">
+					<ul>
+						<li><a href="#">九寨沟7.0地震已造成24人死亡 493人受伤</a></li>
+						<li><a href="#">党的十八大以来生态文明建设成就综述  砥砺奋进</a></li>
+						<li><a href="#">中央代表团赴内蒙古庆祝和慰问活动引热烈反响</a></li>
+						<li><a href="#">受雷雨天气影响 首都机场取消延误航班增至600</a></li>
+						<li><a href="#">301条款来了？特朗普下周一将对中国发起贸易调查</a></li>
+						<li><a href="#">国务院成立陕西安康京昆高速特大交通事故调查组</a></li>
+						<!-- <li><a href="#">工商总局禁限用奇葩企业名称 不得使用语句句群和段落</a></li> -->
+						<!-- <li><a href="#">湖南局地特大暴雨 岳阳一座4万立方米容量山塘溃坝</a></li> -->
+					</ul>
+					<a style="float:right;width:80px;height:30px;color:red;line-height:30px;border-radius:5px;text-align:center;text-decoration:none;" href="http://news.baidu.com/">more ></a>
+				</div>
+				<div style="background:url(images/49.jpg);color:#fff;">
+					<ul style="list-style:none;">
+						<li><a href="#">马德：人生就像行进在高速路，你必须寻找自己的下一个出口</a></li>
+						<li><a href="#">雪小禅：最坚固的爱情，是懂得一个人的心</a></li>
+						<li><a href="#">马德：做个温暖的人，多好</a></li>
+						<li><a href="#">好意思吗？明明看见你没有努力过，你怎么竟然敢说自己尽力了？</a></li>
+						<li><a href="#">马德：心辽阔，人生才辽阔</a></li>
+						<li><a href="#">毕淑敏：当你以为顶不住了，告诉你，那并不是最后的时刻</a></li>
+						<li><a href="#">让一段时光，可以留住岁月</a></li> 
+						<li><a href="#">我们的童年，曾梦幻般的绽放（残月）</a></li> 
+					</ul>
+				</div>
+				<div style="background:url(images/bg3.jpg)">
+					<h1 style="line-height:360px;text-align:center;font-size:50px;text-shadow:8px 8px 2px orange">2018加油</h1>
+				</div>
+			</div>
+		</div>
+		<!-- 问候语 -->
+		<div class="SayHello">
+			<div class="hello">
+				<h1>SayHello</h1>
+				<div>
+				&nbsp &nbsp 对前端有兴趣的我希望得到一份前端工程师的工作。经过在学校实验室两年的历练我有着吃苦耐劳的精神，
+					和不怕艰难的决心;我一直相信只要用心，什么都可以做好。所以请您相信在工作中我一定会是一个很认真，积极主动的人。而且在
+					实验室和老师同学一起做项目的过程中，我也深有体会到一个团队合作的重要性，只有团结共进一个项目才能很好的完成。在项目中我也
+					学会了如何使用一些方便做项目的版本控制器，git和svn。我也在github上上传了自己的一些有意思的练习和部分项目。下面是我GitHub上的网页链接：
+					<a href="https://github.com/yaocuixia">https://github.com/yaocuixia</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer_text">		
+				<div><img src="images/weixin.png">&nbsp 微信账号：ycx1946854552</div>
+				<div><img src="images/message.png">&nbsp  手机号码：18419955881</div>
+				<div><img src="images/email.png">&nbsp  邮箱地址：1946854552@qq.com</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{background: rgba(212, 186, 255, 0.25);}
+.navbar-inverse{height:90px;background: #1f40b3;color: #333333;font-size:18px;}
+.nav-pills{margin-top:30px;}
+
+.pic img{width:200px;height:120px;margin-bottom:13px;border-radius: 5px;}
+button{width:210px;height:40px;margin-left:10px;}
+.part{border:1px solid #1e498c;border-radius:3px;width:100%;height:360px;}
+.part a{font-size:14px;color: rgba(0, 0, 209, 0.78);height:26px;line-height:26px;}
+.panel-footer{background: #000090  }
+.panel-footer p{text-align: center;color:#fff;}
+.jumbotron{height:220px;margin-top:110px;padding:10px;background: rgba(56, 163, 189, 0.13);}
+.ul1 {background: #1bdfff;height:210px;}
+.ul1 a{height:22px;line-height:22px;color:#000;}

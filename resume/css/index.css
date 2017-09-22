@@ -1,0 +1,146 @@
+*{margin:0;padding:0;}
+header{width:100%;height:350px;/*background: rgba(28, 128, 57, 0.9)*/background:url(../images/bg3.jpg);background-size:100% 100%;}
+header img{position:absolute;right:36%;top:25%;}
+section{width:100%;height:auto;}
+section .AboutMe{width:100%;height:360px;background:#fff;position:relative;}
+section .AboutMe .Introduce{width:80%;height:84%;position:absolute;left:10%;top:8%;}
+section .AboutMe .Introduce .left{width:60%;height:100%;float:left;} 
+section .AboutMe .Introduce .left p{line-height:35px;letter-spacing:1px;font-size:14px;}
+section .AboutMe .Introduce .right{width:40%;height:100%;float:right;} 
+section .AboutMe .Introduce .right img{width:100%;height:100%;border-radius:50%;} 
+
+
+@-webkit-keyframes loading{
+	0%{background-color:green;width:5%;}
+	25%{background-color:yellow;width:25%;}
+	50%{background-color:blue;width:50%;}
+	85%{background-color:red;width:85%;}
+	}
+@-webkit-keyframes loading1{
+	0%{background-color:orange;width:5%;}
+	25%{background-color:yellow;width:25%;}
+	50%{background-color:purple;width:50%;}
+	80%{background-color:#FF9900;width:80%;}
+	}
+@-webkit-keyframes loading2{
+	0%{background-color:olive;width:5%;}
+	25%{background-color:gray;width:25%;}
+	50%{background-color:purple;width:50%;}
+	70%{background-color:yellow;width:70%;}
+	}
+@-webkit-keyframes loading3{
+	0%{background-color:orange;width:5%;}
+	25%{background-color:pink;width:25%;}
+	50%{background-color:red;width:50%;}
+	70%{background-color:green;width:70%;}
+	}
+@-webkit-keyframes loading4{
+	0%{background-color:plum;width:5%;}
+	25%{background-color:violet;width:25%;}
+	50%{background-color:brown;width:50%;}
+	65%{background-color:blue;width:65%;}
+	}
+@-webkit-keyframes loading5{
+	0%{background-color:orange;width:5%;}
+	25%{background-color:olive;width:25%;}
+	50%{background-color:yellow;width:50%;}
+	78%{background-color:#33ffff;width:78%;}
+	}
+@-webkit-keyframes loading6{
+	0%{background-color:gray;width:5%;}
+	25%{background-color:red;width:25%;}
+	50%{background-color:green;width:50%;}
+	78%{background-color:#33ffff;width:50%;}
+	}
+@-webkit-keyframes loading7{
+	0%{background-color:purple;width:5%;}
+	25%{background-color:white;width:25%;}
+	40%{background-color:yellow;width:40%;}
+	
+	}
+@-webkit-keyframes loading8{
+	0%{background-color:blue;width:5%;}
+	25%{background-color:#666;width:25%;}
+	300%{background-color:pink;width:30%;}
+	
+	}
+@-webkit-keyframes loading9{
+	0%{background-color:red;width:5%;}
+	25%{background-color:olive;width:25%;}
+	50%{background-color:pink;width:50%;}
+	66%{background-color:olive;width:66%;}
+	}
+	
+	
+section .MySkill{width:100%;height:320px;background:rgba(0,0,0,0.1);position:relative;}
+section .MySkill .skill{width:80%;height:84%;position:absolute;left:10%;top:8%;}
+section .MySkill .skill  h3{line-height:36px;text-align:center}
+section .MySkill .skill .container{line-height:40px;width:48%;height:40px;float:left;margin-left:2%;}
+
+section .progress{width:380px;background:#fff;height:20px;margin-top:10px;float:right;border-radius:6px;}
+section .progress .progress-bar{width:90%;background:red;height:20px;border-radius:6px;-webkit-animation:loading 4s;}
+section .progress .progress-bar1{width:80%;background:#FF9900;height:20px;border-radius:6px;-webkit-animation:loading1 4s;}
+section .progress .progress-bar2{width:70%;background:yellow;height:20px;border-radius:6px;-webkit-animation:loading2 4s;}
+section .progress .progress-bar3{width:70%;background:green;height:20px;border-radius:6px;-webkit-animation:loading3 4s;}
+section .progress .progress-bar4{width:65%;background:blue;height:20px;border-radius:6px;-webkit-animation:loading4 4s;}
+section .progress .progress-bar5{width:78%;background:#33ffff;height:20px;border-radius:6px;-webkit-animation:loading5 4s;}
+section .progress .progress-bar6{width:50%;background:purple;height:20px;border-radius:6px;-webkit-animation:loading6 4s;}
+section .progress .progress-bar7{width:40%;background:pink;height:20px;border-radius:6px;-webkit-animation:loading7 4s;}
+section .progress .progress-bar8{width:30%;background:lime;height:20px;border-radius:6px;-webkit-animation:loading8 4s;}
+section .progress .progress-bar9{width:66%;background:olive;height:20px;border-radius:6px;-webkit-animation:loading9 4s;}
+
+section .TimeLine{width:100%;height:480px;background:#fff;position:relative;}
+section .TimeLine .line{width:80%;height:84%;position:absolute;left:10%;top:8%;}
+section .TimeLine .line h1{text-align:center;line-height:50px;font-size:30px;text-shadow:5px 5px 5px #FF00FF;}
+section .TimeLine .line_left{width:49%;height:360px;border-right:10px solid #999;float:left;position:relative;}
+section .TimeLine .line-right{width:50%;height:360px;float:right;position:relative;}
+.first_year{width:330px;height:80px;background: rgba(28, 128, 57, 0.9);border-radius:6px;float:right;color:#000;line-height:20px;letter-spacing:1px;font-size:14px;margin-top:12px;margin-right:20px;}
+.second_year{width:330px;height:90px;border-radius:6px;margin-top:90px;background:skyblue;margin-left:20px;line-height:20px;letter-spacing:1px;font-size:14px;}
+.third_year{width:330px;height:80px;border-radius:6px;background:rgba(0,0,0,0.1);margin-top:100px;line-height:20px;letter-spacing:1px;font-size:14px;float:right;margin-right:20px;}
+.forth_year{width:330px;height:86px;border-radius:6px;margin-top:80px;background:orange;line-height:20px;letter-spacing:1px;font-size:14px;margin-left:20px;}
+
+
+section .FirstBlack{width:100%;height:150px;background:rgba(0,0,0,0.7);position:relative;}
+section .FirstBlack  .first{width:80%;height:84%;position:absolute;left:10%;top:8%;}
+/* section .FirstBlack  .first img{width:200px;height:100%;border-radius:5px;} */
+#demo {background: #FFF;overflow:hidden;border: 1px dashed #CCC;width:100%;height:100%;}
+#demo img { width:200px;height:130px;border-radius:5px; }
+#indemo { float: left;  width: 200%; }
+#demo1 { float: left;}
+#demo2 {float: left; }
+
+section .MyUniversity{width:100%;height:500px;background:#fff;position:relative;}
+section .MyUniversity .university{width:80%;height:86%;position:absolute;left:10%;top:7%;}
+section .MyUniversity .university  ul{margin:0;padding:0;list-style:none;float:right;}
+section .MyUniversity .university  ul li{width:100px;height:30px;margin:10px;border-radius:3px;background:rgba(0,0,0,0.8);
+											cursor:pointer;color:#fff;box-shadow:3px 4px 2px #666;float:left;text-align:center;line-height:30px;}
+article{letter-spacing:1px;font-size:14px;line-height:25px;}
+#tab_c{width:100%;height:86%;position:absolute;bottom:0;}
+#tab_t .act{ background:blue;}
+.hide{display:none;}
+#pic img{width:220px;height:160px;border-radius:20px;margin-left:3%;margin-top:1%;}
+article img{width:160px;height:160px;border-radius:80px;margin-left:10px;}
+	
+section .SecondBlack{width:100%;height:150px;background:rgba(0,0,0,0.7);position:relative;}
+section .SecondBlack .second{width:80%;height:84%;background:rgba(0,0,0,0.1);position:absolute;left:10%;top:8%;color:#fff;font-size:14px;line-height:23px;letter-spacing:1px;}
+section .SecondBlack .second img{width:200px;height:100%;border-radius:5px;float:left;}
+
+section .LatestNew{width:100%;height:460px;background:#fff;position:relative;}
+section .LatestNew  .new{width:80%;height:86%;position:absolute;left:10%;top:5%;}
+section .LatestNew  .new h1{text-align:center;line-height:40px;font-size:30px;text-shadow:5px 5px 5px purple;}
+section .LatestNew  .new div{width:27%;height:360px;float:left;margin-left:4.8%;border-radius:3px;border:2px solid #ff9900;box-shadow:5px 5px 5px blue;}
+.new  ul{margin:0;padding:0;margin-left:5%;}
+.new  ul li{margin:0;padding:0;font-size:14px;line-height:30px;}
+.new  ul li a{text-decoration:none;color:rgba(0,0,0,0.8);}
+.new  ul li a:hover{color:blue;}
+
+
+section .SayHello{width:100%;height:360px;background:rgba(129,223,120,0.1);position:relative;}
+section .SayHello .hello{width:80%;height:84%;background:url(../images/bg.jpg);position:absolute;left:10%;top:8%;border-radius:50%;}
+section .SayHello .hello h1{text-align:center;font-size:36px;line-height:60px;text-shadow:5px 5px 5px peru;}
+section .SayHello .hello div{margin:1% 5%;line-height:28px;}
+
+footer{width:100%;height:100px;background:rgba(0,0,0,0.7);position:relative;}
+footer .footer_text{width:80%;height:84%;position:absolute;left:10%;top:8%;}
+footer .footer_text div{float:left;margin-left:8%;margin-top:2.5%;color:#fff;text-shadow:5px 5px 5px orange;}
+footer .footer_text img{width:20px;height:20px;margin-top:2%;}
