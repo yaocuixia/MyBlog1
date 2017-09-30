@@ -4,7 +4,7 @@ body{background: rgba(212, 186, 255, 0.25);}
 
 .pic img{width:200px;height:120px;margin-bottom:13px;border-radius: 5px;}
 button{width:210px;height:40px;margin-left:10px;}
-.part{border:1px solid #1e498c;border-radius:3px;width:100%;height:360px;}
+.part{width:100%;height:360px;}
 .part a{font-size:14px;color: rgba(0, 0, 209, 0.78);height:26px;line-height:26px;}
 .panel-footer{background: #000090  }
 .panel-footer p{text-align: center;color:#fff;}
